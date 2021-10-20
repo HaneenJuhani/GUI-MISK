@@ -186,24 +186,10 @@ for j in range(5):
     subh01.grid(column=1, padx=3, pady=3, ipadx=1, ipady=1)
     var_refs.trace_add('write', populate)
 
+
+
 ####End of Frame 1 setup####
 
-# Sample count
-
-subh0001 = Label(frame1, width=2, text="1", fg="black", bg="#138D75", relief="groove", font=("Calibri Light", 12))
-subh0001.grid(row=2, column=0, padx=3, sticky="ew")
-
-subh0002 = Label(frame1, width=2, text="2", fg="black", bg="#138D75", relief="groove", font=("Calibri Light", 12))
-subh0002.grid(row=3, column=0, padx=3, sticky="ew")
-
-subh0003 = Label(frame1, width=2, text="3", fg="black", bg="#138D75", relief="groove", font=("Calibri Light", 12))
-subh0003.grid(row=4, column=0, padx=3, sticky="ew")
-
-subh0004 = Label(frame1, width=2, text="4", fg="black", bg="#138D75", relief="groove", font=("Calibri Light", 12))
-subh0004.grid(row=5, column=0, padx=3, sticky="ew")
-
-subh0005 = Label(frame1, width=2, text="5", fg="black", bg="#138D75", relief="groove", font=("Calibri Light", 12))
-subh0005.grid(row=6, column=0, padx=3, sticky="ew")
 
 # Frame 3 for Upload Button
 
@@ -379,7 +365,7 @@ cv_text.tag_add("center", "1.0", "end")
 
 ############### Frame2 #################
 
-h2=Label(frame2, text="Results", fg="black", bg="#138D75", font=("Calibri Light", 16))
+h2=Label(frame2, text="Results", fg="black", bg="#138D75", font=("Calibri", 16))
 h2.grid(row=0, columnspan=7, sticky="ew", padx=3, pady=3)
 
 no1=Label(frame2, text="No.", fg="black", relief="groove", bg="#138D75", font=("Calibri Light", 12))
@@ -401,6 +387,100 @@ tubs1.grid(row=1, column=3, padx=3, sticky="ew")
 dosage1=Label(frame2, text="Dosage", fg="black", relief="groove", bg="#B2BABB", font=("Calibri Light", 12))
 dosage1.config(width=18)
 dosage1.grid(row=1, column=4, padx=3, sticky="ew")
+
+#No.
+no01 = Label(frame2, width=2, text="1", fg="black", bg="#138D75", font=("Calibri Light", 12))
+no01.grid(row=2, column=0, padx=3, sticky="ew")
+
+no02 = Label(frame2, width=2, text="2", fg="black", bg="#138D75", font=("Calibri Light", 12))
+no02.grid(row=3, column=0, padx=3, sticky="ew")
+
+no03 = Label(frame2, width=2, text="3", fg="black", bg="#138D75", font=("Calibri Light", 12))
+no03.grid(row=4, column=0, padx=3, sticky="ew")
+
+no04 = Label(frame2, width=2, text="4", fg="black", bg="#138D75", font=("Calibri Light", 12))
+no04.grid(row=5, column=0, padx=3, sticky="ew")
+
+no05 = Label(frame2, width=2, text="5", fg="black", bg="#138D75", font=("Calibri Light", 12))
+no05.grid(row=6, column=0, padx=3, sticky="ew")
+
+#dosage
+
+do01 = Label(frame2, width=2, fg="black", relief="flat", font=("Calibri Light", 12))
+do01.grid(row=2, column=4, padx=3, sticky="ew")
+
+do02 = Label(frame2, width=2, fg="black", relief="flat", font=("Calibri Light", 12))
+do02.grid(row=3, column=4, padx=3, sticky="ew")
+
+do03 = Label(frame2, width=2, fg="black", relief="flat", font=("Calibri Light", 12))
+do03.grid(row=4, column=4, padx=3, sticky="ew")
+
+do04 = Label(frame2, width=2, fg="black", relief="flat", font=("Calibri Light", 12))
+do04.grid(row=5, column=4, padx=3, sticky="ew")
+
+do05 = Label(frame2, width=2, fg="black", relief="flat", font=("Calibri Light", 12))
+do05.grid(row=6, column=4, padx=3, sticky="ew")
+
+#type loop
+
+#refs = []
+#for j in range(5):
+#    var_refs = tk.StringVar()
+#    refs.append(var_refs)
+#    ty01 = Entry(frame2, width=15, fg="black", font=("Calibri Light", 12), textvariable=var_refs)
+#    ty01.grid(column=1, padx=3, pady=3, ipadx=1, ipady=1)
+#    var_refs.trace_add('write', populate)    
+
+
+#type 
+ty001 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+ty001.grid(row=2, column=1, padx=3, pady=3, sticky="ew")
+
+ty002 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+ty002.grid(row=3, column=1, padx=3, pady=3, sticky="ew")
+
+ty003 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+ty003.grid(row=4, column=1, padx=3, pady=3, sticky="ew")
+
+ty004 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+ty004.grid(row=5, column=1, padx=3, pady=3,sticky="ew")
+
+ty005 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+ty005.grid(row=6, column=1, padx=3, pady=3, sticky="ew")
+
+#Target
+tr001 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+tr001.grid(row=2, column=2, padx=3, pady=3, sticky="ew")
+
+tr002 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+tr002.grid(row=3, column=2, padx=3, pady=3, sticky="ew")
+
+tr003 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+tr003.grid(row=4, column=2, padx=3, pady=3, sticky="ew")
+
+tr004 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+tr004.grid(row=5, column=2, padx=3, pady=3,sticky="ew")
+
+tr005 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+tr005.grid(row=6, column=2, padx=3, pady=3, sticky="ew")
+
+#Tubs
+
+tu001 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+tu001.grid(row=2, column=3, padx=3, pady=3, sticky="ew")
+
+do002 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+do002.grid(row=3, column=3, padx=3, pady=3, sticky="ew")
+
+do003 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+do003.grid(row=4, column=3, padx=3, pady=3, sticky="ew")
+
+do004 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+do004.grid(row=5, column=3, padx=3, pady=3,sticky="ew")
+
+do005 = Entry(frame2, width=2, fg="black", font=("Calibri Light", 12))
+do005.grid(row=6, column=3, padx=3, pady=3, sticky="ew")
+
 
 
 
