@@ -4,7 +4,6 @@ from tkinter import filedialog
 import pandas as pd
 import csv
 import os
-import mysql.connector
 
 mydata = []
 
@@ -577,12 +576,10 @@ def export():
         exp_writer = csv.writer(myfile, delimiter=",")
         for i in mydata:
             exp_writer.writerow(i)
-    update(rows)
 
 
 i3 = Button(frame6, text="Export Results", borderwidth=3, relief="raised", padx=5, pady=10, font=("Calibri Light", 10), command=export)
 i3.pack(fill=BOTH, expand=TRUE)
-
 
 ################### END OF FRAME6 #################
 
